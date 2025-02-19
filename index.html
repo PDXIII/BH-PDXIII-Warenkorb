@@ -15,12 +15,13 @@
       <h1>Shop Base</h1>
     </header>
     <main>
-      <section>
+      <section id="product-section">
         <h2>Products</h2>
         <ul id="product-display">
           <li>
             <article class="product">
               <h3>Apfel</h3>
+              <h4 class="art-no">1001</h4>
               <img src="https://placehold.co/128" alt="Bild von einem Apfel" />
               <p><b>0,99</b> Euro</p>
               <p>
@@ -36,6 +37,7 @@
           <li>
             <article class="product">
               <h3>Wassermelone</h3>
+              <h4 class="art-no">1002</h4>
               <img src="https://placehold.co/128" alt="Bild von einem Apfel" />
               <p><b>2,99</b> Euro</p>
               <p>
@@ -51,6 +53,7 @@
           <li>
             <article class="product">
               <h3>Birne</h3>
+              <h4 class="art-no">1003</h4>
               <img src="https://placehold.co/128" alt="Bild von einem Apfel" />
               <p><b>0,99</b> Euro</p>
               <p>
@@ -66,6 +69,7 @@
           <li>
             <article class="product">
               <h3>Kokosnuss</h3>
+              <h4 class="art-no">1004</h4>
               <img src="https://placehold.co/128" alt="Bild von einem Apfel" />
               <p><b>1,99</b> Euro</p>
               <p>
@@ -81,6 +85,7 @@
           <li>
             <article class="product">
               <h3>Orange</h3>
+              <h4 class="art-no">1005</h4>
               <img src="https://placehold.co/128" alt="Bild von einem Apfel" />
               <p><b>1,49</b> Euro</p>
               <p>
@@ -102,12 +107,16 @@
     <script>
 
         const productDisplay = document.getElementById("product-display");
+        const productSection = document.getElementById("product-section")
         productDisplay.addEventListener("click", function(event) {
             if(event.target.tagName === "BUTTON") {
-                // event.stopPropagation();
+                event.stopPropagation();
                 console.log("Hinzugefügt!")
             }
-            // console.log("das ist kein Button");
+        });
+        
+        productSection.addEventListener("click", function(event) {
+            console.log("das ist kein Button");
         });
     </script>
   </body>
