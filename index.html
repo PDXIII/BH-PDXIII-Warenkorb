@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Base</title>
+    <style>
+      ul#product-display {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Shop Base</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Products</h2>
+        <ul id="product-display">
+          <li>
+            <article class="product">
+              <h3>Apfel</h3>
+              <img src="https://placehold.co/128" alt="Bild von einem Apfel" />
+              <p><b>0,99</b> Euro</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam mollitia, minima vitae dignissimos molestias, veritatis
+                veniam doloremque amet rerum nostrum commodi hic nesciunt a.
+                Mollitia quibusdam nulla porro obcaecati hic!
+              </p>
+              <a href="#">Mehr Infos!</a>
+              <button>Kauf Mich!</button>
+            </article>
+          </li>
+          <li>
+            <article class="product">
+              <h3>Wassermelone</h3>
+              <img src="https://placehold.co/128" alt="Bild von einem Apfel" />
+              <p><b>2,99</b> Euro</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam mollitia, minima vitae dignissimos molestias, veritatis
+                veniam doloremque amet rerum nostrum commodi hic nesciunt a.
+                Mollitia quibusdam nulla porro obcaecati hic!
+              </p>
+              <a href="#">Mehr Infos!</a>
+              <button>Kauf Mich!</button>
+            </article>
+          </li>
+          <li>
+            <article class="product">
+              <h3>Birne</h3>
+              <img src="https://placehold.co/128" alt="Bild von einem Apfel" />
+              <p><b>0,99</b> Euro</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam mollitia, minima vitae dignissimos molestias, veritatis
+                veniam doloremque amet rerum nostrum commodi hic nesciunt a.
+                Mollitia quibusdam nulla porro obcaecati hic!
+              </p>
+              <a href="#">Mehr Infos!</a>
+              <button>Kauf Mich!</button>
+            </article>
+          </li>
+          <li>
+            <article class="product">
+              <h3>Kokosnuss</h3>
+              <img src="https://placehold.co/128" alt="Bild von einem Apfel" />
+              <p><b>1,99</b> Euro</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam mollitia, minima vitae dignissimos molestias, veritatis
+                veniam doloremque amet rerum nostrum commodi hic nesciunt a.
+                Mollitia quibusdam nulla porro obcaecati hic!
+              </p>
+              <a href="#">Mehr Infos!</a>
+              <button>Kauf Mich!</button>
+            </article>
+          </li>
+          <li>
+            <article class="product">
+              <h3>Orange</h3>
+              <img src="https://placehold.co/128" alt="Bild von einem Apfel" />
+              <p><b>1,49</b> Euro</p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam mollitia, minima vitae dignissimos molestias, veritatis
+                veniam doloremque amet rerum nostrum commodi hic nesciunt a.
+                Mollitia quibusdam nulla porro obcaecati hic!
+              </p>
+              <a href="#">Mehr Infos!</a>
+              <button>Kauf Mich!</button>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Shop Base. All rights reserved.</p>
+    </footer>
+    <script>
+
+        const productDisplay = document.getElementById("product-display");
+        productDisplay.addEventListener("click", function(event) {
+            if(event.target.tagName === "BUTTON") {
+                // event.stopPropagation();
+                console.log("Hinzugefügt!")
+            }
+            // console.log("das ist kein Button");
+        });
+    </script>
+  </body>
+</html>
