@@ -8,6 +8,12 @@
       ul#product-display {
         list-style: none;
       }
+      #product-section {
+        background-color: beige;
+      }
+      .product {
+        background-color: aquamarine;
+      }
     </style>
   </head>
   <body>
@@ -108,10 +114,13 @@
 
         const productDisplay = document.getElementById("product-display");
         const productSection = document.getElementById("product-section")
+
         productDisplay.addEventListener("click", function(event) {
             if(event.target.tagName === "BUTTON") {
                 event.stopPropagation();
-                console.log("Hinzugefügt!")
+                console.log("Hinzugefügt!");
+                // 
+                // console.log(event.target.parentNode.childNodes[3].innerText);
             }
         });
         
