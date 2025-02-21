@@ -1,0 +1,11 @@
+ul#product-display {
+  list-style: none;
+}
+
+#product-section {
+  background-color: beige;
+}
+
+.product {
+  background-color: aquamarine;
+}
